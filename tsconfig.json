@@ -22,11 +22,13 @@
       "@components/*": ["src/components/*"],
       "@themes/*": ["src/themes/*"],
       "@interfaces/*": ["src/interfaces/*"],
-      "@contexts/*": ["src/contexts/*"],
+      "@context/*": ["src/context/*"],
       "@hooks/*": ["src/hooks/*"],
       "@assets/*": ["src/assets/*"],
       "@services/*": ["src/services/*"],
-      "@functions/*": ["src/functions/*"]
+      "@functions/*": ["src/functions/*"],
+      "@lib/*": ["src/lib/*"],
+      "@style/*": ["src/style/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
