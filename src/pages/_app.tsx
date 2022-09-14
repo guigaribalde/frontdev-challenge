@@ -1,4 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react';
+import { MoviesProvider } from '@context/MoviesContext';
+import '@style/index.css';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import type { AppProps } from 'next/app';
 
@@ -8,7 +10,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
       <QueryClientProvider client={queryClient}>
-        <Component {...pageProps} />
+        <MoviesProvider>
+          <Component {...pageProps} />
+        </MoviesProvider>
       </QueryClientProvider>
     </ChakraProvider>
   );
